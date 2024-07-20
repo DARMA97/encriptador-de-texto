@@ -190,14 +190,14 @@
     .texto{
         width: 80%;
         height: 60%;
-        left: 10%;
+        left: 7%;
         top: 5%;
 
     }
 
     .instrucciones{
         width: 80%;
-        left: 10%;
+        left: 7%;
         top: 67%;
 
     }
@@ -208,7 +208,7 @@
 
     .botones{
         width: 80%;
-        left: 10%;
+        left: 7%;
         top: 70%;
     }
 
@@ -223,5 +223,26 @@
         width: 47.5%;
         padding: 1.8%;
     }
+
+    .salidatexto{
+        width: 77%;
+        height: 15%;
+        left: 7%;
+        top: 80%;
+        
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+
+    }
+
+    .salidatexto img {
+        top: 0;
+        display: none;
+        visibility: hidden; 
+    }
+    
 
 }
