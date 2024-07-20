@@ -177,6 +177,51 @@
 }
 
 /* responsive desing para la pagina*/
-@media (max-width: 57.5 em) {
-    
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encriptar{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+
+    }
+
+    .instrucciones{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+
+    }
+
+    .instrucciones p{
+        font-size: 16px;
+    }
+
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn:hover{
+        margin-right: 24px;
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
 }
