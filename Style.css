@@ -118,3 +118,19 @@
 }
 
 
+.salidatexto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background-color: var(--fuente--encriptar);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+
