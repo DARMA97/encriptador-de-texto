@@ -5,6 +5,7 @@
     --color-secundario: #0A3871;
     --color--terciario: #495057;
     --color--desencriptar: #D8DFE8;
+    --color--titulos: #343A40;
 
 
     --fuente-inter: "Inter", sans-serif;
@@ -121,7 +122,6 @@
 .salidatexto{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     position: absolute;
     width: 30%;
     height: 90%;
@@ -133,4 +133,38 @@
 
 }
 
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family:  var(--fuente-inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color--titulos) ;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color--terciario);
+}
 
