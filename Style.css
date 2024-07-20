@@ -3,6 +3,7 @@
 :root{
     --color-primario: #F3F5FC;
     --color-secundario: #0A3871;
+    --color--terciario: #495057;
 
     --fuente-inter: "Inter", sans-serif;
 }
@@ -40,4 +41,29 @@
 .texto:focus,.texto:active{
     border: none;
     outline: none; 
+}
+
+.instrucciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap:8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.instrucciones p {
+    font-family: var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color--terciario);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
