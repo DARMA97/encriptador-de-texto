@@ -15,6 +15,18 @@
             <img src="/assets/bi_exclamation-circle-fill.png" id="exclamacion">
             <p>Solo letras minúsculas y sin acentos</p>
         </div>
+        <div class="botones">
+            <button class="btn" id="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="btn" id="bnt-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <div class="salidatexto">
+            <img src="/assets/Muñeco.png" alt="Imagen persona" id="persona">
+            <div class="mensaje-encriptado" id="msn-encriptado">
+                <h2 id="titulo mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo-encrip">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <textarea name="" id="mensaje" class="mensaje"></textarea>
+            </div>
+        </div>
     </div> 
 </body>
 <script src="/app.js"></script>
