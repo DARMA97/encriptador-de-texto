@@ -15,6 +15,14 @@ function encriptar(){
     parrafo.textContent="";
     contenido.innerHTML=textoEncriptado;
 
+    document.getElementById("textoEncriptdo").style.display="show";
+    document.getElementById("textoEncriptdo").style.display="inherit";
+
+    document.getElementById("copiar").style.display="show";
+    document.getElementById("copiar").style.display="inherit";
+
+    document.getElementById("persona").style.display="none";
+
     return console.log(textoEncriptado);
   
 }
