@@ -124,7 +124,7 @@
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 92%;
     left: 60%;
     top: 5%;
     background-color: var(--fuente--encriptar);
@@ -168,3 +168,15 @@
     color: var(--color--terciario);
 }
 
+#persona {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+
+}
+
+/* responsive desing para la pagina*/
+@media (max-width: 57.5 em) {
+    
+}
