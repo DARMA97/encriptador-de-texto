@@ -61,19 +61,13 @@ function copiar(){
     let parrafo = document.getElementById("parrafo-encrip");
     let contenido = document.querySelector("#textoEncriptdo");
     let persona = document.getElementById("persona");
+    let texto = document.querySelector("#texto");
 
     contenido.select();
     document.execCommand("copy");
 
-    tituloMensaje.textContent= "Ningún mensaje fue encontrado";
-    parrafo.textContent="Ingresa el texto que desees encriptar o desencriptar.";
-    contenido.innerHTML=""
-    
-    persona.style.display="block";
-
-    document.getElementById("textoEncriptdo").style.display="none";
-    document.getElementById("copiar").style.display="none";
-    
+    texto.value="";
+   
     return console.log(textoEncriptado);
     
 
