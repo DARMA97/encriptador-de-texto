@@ -11,6 +11,7 @@ function encriptar(){
     .replace(/o/img,"ober")
     .replace(/u/img,"ufat");
 
+    if(texto.length != 0){
     tituloMensaje.textContent= "";
     parrafo.textContent="";
     contenido.innerHTML=textoEncriptado;
@@ -23,7 +24,9 @@ function encriptar(){
     document.getElementById("copiar").style.display="inherit";
 
     document.getElementById("persona").style.display="none";
-
+    } else{
+    alert("Debes ingresar un texto");
+    }
     return console.log(textoEncriptado);
   
 }
@@ -40,7 +43,7 @@ function desencriptar(){
     .replace(/ai/img,"a")
     .replace(/ober/img,"o")
     .replace(/ufat/img,"u");
-
+    if(texto.length !=0){
     tituloMensaje.textContent= "";
     parrafo.textContent="";
     contenido.innerHTML=textoDesencriptado;
@@ -53,6 +56,10 @@ function desencriptar(){
     document.getElementById("copiar").style.display="inherit";
 
     document.getElementById("persona").style.display="none";
+
+    } else {
+        alert("Debes ingresar un texto");
+    }
 }
 
 function copiar(){
