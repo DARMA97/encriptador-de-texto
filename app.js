@@ -43,16 +43,38 @@ function desencriptar(){
 
     tituloMensaje.textContent= "";
     parrafo.textContent="";
-    contenido.innerHTML = textoDesencriptado;
+    contenido.innerHTML=textoDesencriptado;
 
-    return console.log(textoDesncriptado);
+    document.getElementById("textoEncriptdo").style.display="show";
+    document.getElementById("textoEncriptdo").style.display="inherit";
 
+    document.getElementById("copiar").style.display="flex";
+    document.getElementById("copiar").style.display="show";
+    document.getElementById("copiar").style.display="inherit";
+
+    document.getElementById("persona").style.display="none";
 }
 
 function copiar(){
 
+    let tituloMensaje = document.getElementById("tituloMensaje");
+    let parrafo = document.getElementById("parrafo-encrip");
     let contenido = document.querySelector("#textoEncriptdo");
+    let persona = document.getElementById("persona");
+
     contenido.select();
-    return document.execCommand("copy");
+    document.execCommand("copy");
+
+    tituloMensaje.textContent= "Ningún mensaje fue encontrado";
+    parrafo.textContent="Ingresa el texto que desees encriptar o desencriptar.";
+    contenido.innerHTML=""
+    
+    persona.style.display="block";
+
+    document.getElementById("textoEncriptdo").style.display="none";
+    document.getElementById("copiar").style.display="none";
+    
+    return console.log(textoEncriptado);
+    
 
 }

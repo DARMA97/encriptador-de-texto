@@ -29,7 +29,7 @@
   position: absolute;
   width: 42%;
   height: 50%;
-  left: 12%;
+  left: 20%;
   top: 15%; 
   border: none; 
   font-weight: 400;
@@ -55,7 +55,7 @@
     gap:8px;
     position: absolute;
     width: 80%;
-    left: 12%;
+    left: 20%;
     top: 76%;
 }
 
@@ -78,7 +78,7 @@
     padding: 1% 0;
     position: absolute;
     width: 80%;
-    left: 12%;
+    left: 20%;
     top: 80%;
 }
 
@@ -125,7 +125,7 @@
     position: absolute;
     width: 30%;
     height: 92%;
-    left: 60%;
+    left: 65%;
     top: 5%;
     background-color: var(--fuente--encriptar);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -169,6 +169,7 @@
 }
 
 #persona {
+    display: show;
     position: absolute;
     width: 70%;
     height: 40%;
@@ -195,7 +196,7 @@
 #textoEncriptdo {
     display: none;
     width: 80%; 
-    height: 80%;
+    height: 75%;
     top: 15%;
     border: none; 
     background-color: var(--fuente--encriptar);
@@ -215,14 +216,11 @@
 #copiar{
     display: none;
     align-items: center;
-    padding: 1% 0;
+    padding: 5%;
     width: 65%;
-    height: 13%;
     left: 12%;
     align-items: center;
     justify-content: center;
-    padding: 2%;
-    gap:8px;
     border-radius: 24px;
     font-family: var(--fuente-inter);
     font-weight: 400;
@@ -231,11 +229,13 @@
     text-align: center;
     color: var(--color-secundario);
     background-color: var(--fuente--encriptar);
-    border: 1px solid var(--color-secundario);
-    
+    border: 1px solid var(--color-secundario);    
+}
 
-    
-    
+#copiar:hover{
+    margin: 0.3%;
+    width: 63.5%;
+    padding: 4.8%;
 }
 
 /* responsive desing para la pagina*/
@@ -243,6 +243,7 @@
     .container{
         display: flex;
         flex-direction: row;
+        
     }
 
     .encriptar{
@@ -250,17 +251,17 @@
     }
 
     .texto{
-        width: 80%;
-        height: 60%;
-        left: 7%;
+        width: 90%;
+        height: 50%;
+        left: 5%;
         top: 5%;
 
     }
 
     .instrucciones{
-        width: 80%;
-        left: 7%;
-        top: 67%;
+        width: 90%;
+        left: 5%;
+        top: 58%;
 
     }
 
@@ -269,28 +270,29 @@
     }
 
     .botones{
-        width: 80%;
-        left: 7%;
-        top: 70%;
+        width: 100%;
+        left: 5%;
+        top: 61%;
     }
 
-    .btn{
-        width: 48%;
+    #btn-encriptar,#bnt-desencriptar {
+        width: 43%;
         border-radius: 16px;
+        margin-right: 24px;
     }
 
     .btn:hover{
         margin-right: 24px;
         margin: 0.3%;
-        width: 47.5%;
+        width: 40.5%;
         padding: 1.8%;
     }
 
     .salidatexto{
-        width: 77%;
-        height: 15%;
-        left: 7%;
-        top: 80%;
+        width: 91%;
+        height: 28%;
+        left: 5%;
+        top: 69%;
         
     }
 
@@ -306,5 +308,79 @@
         visibility: hidden; 
     }
 
+    .respuesta{
+        width: 100%;
+        height: 90%;
+        left: 0%;
+        top: 5%;
+        gap: 8px;
+        
+    }
+
+    #textoEncriptdo{
+        width: 90%;
+        height: 65%;
+        left: 0%;
+        
+    }
+
+    #copiar{
+        width: 90%;
+        padding: 3%;
+        border-radius: 16px;
+
+    }
+
+    #copiar:hover{
+        margin: 0.3%;
+        width: 88.5%;
+        padding: 1.8%;
+    }
+
+
+
 
 }
+
+@media (max-width: 23.5em){
+    .texto{
+        height: 40%;
+    }
+    .instrucciones{
+        top: 48%;
+    }
+    .botones{
+        flex-direction: column;
+        top: 50%;
+    }
+    #btn-encriptar,#bnt-desencriptar {
+        width: 90%;
+        border-radius: 16px;
+        margin: 8px;
+        padding: 5%;
+        
+    }
+
+    .salidatexto{
+        width: 91%;
+        height: 33%;
+        left: 5%;
+        top: 65%;
+        
+    }
+
+    .respuesta{
+        top: 0%;
+        gap: 8%;
+    }
+
+    #textoEncriptdo{
+        padding-top: 6%;
+        height:80%;
+        
+    }
+    #copiar{
+        padding: 6%;
+    }
+
+}   
