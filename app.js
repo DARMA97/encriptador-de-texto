@@ -18,6 +18,7 @@ function encriptar(){
     document.getElementById("textoEncriptdo").style.display="show";
     document.getElementById("textoEncriptdo").style.display="inherit";
 
+    document.getElementById("copiar").style.display="flex";
     document.getElementById("copiar").style.display="show";
     document.getElementById("copiar").style.display="inherit";
 
